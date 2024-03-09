@@ -7,27 +7,31 @@
       content="width=device-width, initial-scale=1.0"
     />
     <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link
       href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;600;700;900&display=swap"
       rel="stylesheet"
     />
+
     <title>Page 1</title>
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
     <header class="header">
-      <div class="header__left">
-        <div class="header__left__brand">
+      <div class="header-left">
+        <div class="header-left__brand">
           <img src="./images/logo/tripleB.png" alt="logo" />
-          <p class="header__left__brand-text">BRAN<span>D</span></p>
+          <p class="header-left__brand-text">BRAN<span>D</span></p>
         </div>
-        <div class="header__left__search">
-          <div class="browse">
-            Browse
-            <img
-              src="./images/forms/caretdownGray.png"
-              alt="caretdown"
-            />
-          </div>
+        <div class="header-left__search">
+          <details class="browse">
+            <summary>Browse</summary>
+            <a href="#">Item 1</a>
+            <a href="#">Item 2</a>
+            <a href="#">Item 3</a>
+          </details>
           <input
             type="text"
             id="search-header"
@@ -41,19 +45,18 @@
           </div>
         </div>
       </div>
-      <div class="header__right">
+      <div class="header-right">
         <img
           class="basket-img"
           src="./images/logo/basketGrey.png"
           alt="basket"
         />
-        <div class="my-account">
-          <p>My Account</p>
-          <img
-            src="./images/forms/caretdownWhite.png"
-            alt="caretdown"
-          />
-        </div>
+        <details class="my-account">
+          <summary>My Account</summary>
+          <a href="#">Item 1</a>
+          <a href="#">Item 2</a>
+          <a href="#">Item 3</a>
+        </details>
       </div>
     </header>
     <section class="section-top">
@@ -73,8 +76,8 @@
         </div>
       </div>
     </section>
-    <section class="section-center">
-      <div class="sections-interest">
+    <section class="pageOne-center">
+      <section class="sections-interest">
         <div class="for-men">
           <div class="sticker">
             <p>HOT DEAL</p>
@@ -99,12 +102,12 @@
             <h3>ACCESORIES</h3>
           </div>
         </div>
-      </div>
+      </section>
       <div class="fetured-items">
         <h3>Fetured Items</h3>
         <p>Shop for items based on what we featured in this week</p>
       </div>
-      <div class="product-selection">
+      <section class="product-selection">
         <div class="product one">
           <div class="product__image">
             <div class="fon-add">
@@ -236,7 +239,7 @@
           <p class="product-name">Mango People T-shirt</p>
           <p class="product-price">$52.00</p>
         </div>
-      </div>
+      </section>
       <div class="browse-all-product">
         <p>Browse All Product</p>
         <img
@@ -244,7 +247,7 @@
           alt="arrow"
         />
       </div>
-      <div class="sales">
+      <section class="sales">
         <div class="sales__fon">
           <div class="offer">
             <h3>30% <span>OFFER</span></h3>
@@ -283,11 +286,11 @@
             </div>
           </div>
         </div>
-      </div>
+      </section>
     </section>
     <section class="section-subscribe">
       <div class="section-subscribe__fon">
-        <div class="greetings">
+        <figure class="greetings">
           <img src="./images/foto/roundphoto.png" alt="girl" />
           <div class="greetings__text">
             <p class="greetings__text__main-text">
@@ -303,25 +306,25 @@
               <div class="rect gray"></div>
             </div>
           </div>
-        </div>
-        <div class="input-email">
+        </figure>
+        <section class="input-email">
           <div class="input-email__text">
             <h3>SUBSCRIBE</h3>
             <p>FOR OUR NEWLETTER AND PROMOTION</p>
           </div>
-          <div class="input-email__input">
+          <form class="input-email__input">
             <input
               type="email"
               class="email"
               placeholder="Enter Your Email"
             />
             <button class="subscribe-button">Subscribe</button>
-          </div>
-        </div>
+          </form>
+        </section>
       </div>
     </section>
     <section class="section-info">
-      <div class="announced">
+      <section class="announced">
         <div class="announced__brand">
           <img src="./images/logo/tripleB.png" alt="logo" />
           <p class="announced__brand-text">BRAN<span>D</span></p>
@@ -338,43 +341,41 @@
           infomediaries. Distinctively seize superior initiatives for
           wireless technologies. Dynamically optimize.
         </p>
+      </section>
+      <section class="info-links company">
+        <h3>COMPANY</h3>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Shop</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">How It Works</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </section>
+      <div class="info-links information">
+        <h3>INFORMATION</h3>
+        <ul>
+          <li><a href="#">Tearms & Condition</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">How to Buy</a></li>
+          <li><a href="#">How to Sell</a></li>
+          <li><a href="#">Promotion</a></li>
+        </ul>
       </div>
-      <div class="section-info__type">
-        <div class="section-info__type-list company">
-          <h3>COMPANY</h3>
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Shop</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">How It Works</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
-        </div>
-        <div class="section-info__type-list information">
-          <h3>INFORMATION</h3>
-          <ul>
-            <li><a href="#">Tearms & Condition</a></li>
-            <li><a href="#">Privacy Policy</a></li>
-            <li><a href="#">How to Buy</a></li>
-            <li><a href="#">How to Sell</a></li>
-            <li><a href="#">Promotion</a></li>
-          </ul>
-        </div>
-        <div class="section-info__type-list shop-category">
-          <h3>SHOP CATEGORY</h3>
-          <ul>
-            <li><a href="#">Men</a></li>
-            <li><a href="#">Women</a></li>
-            <li><a href="#">Child</a></li>
-            <li><a href="#">Apparel</a></li>
-            <li><a href="#">Brows All</a></li>
-          </ul>
-        </div>
+      <div class="info-links shop-category">
+        <h3>SHOP CATEGORY</h3>
+        <ul>
+          <li><a href="#">Men</a></li>
+          <li><a href="#">Women</a></li>
+          <li><a href="#">Child</a></li>
+          <li><a href="#">Apparel</a></li>
+          <li><a href="#">Brows All</a></li>
+        </ul>
       </div>
     </section>
     <footer>
       <p>© 2022 Brand All Rights Reserved.</p>
-      <div class="social-icon">
+      <nav class="social-icon">
         <div class="facebook square">
           <img
             src="./images/sociallogo/facebook-f.svg"
@@ -402,7 +403,7 @@
             alt="google"
           />
         </div>
-      </div>
+      </nav>
     </footer>
   </body>
 </html>

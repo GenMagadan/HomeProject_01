@@ -7,7 +7,7 @@
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.17);
   background-color: $colorFonOne;
 
-  &__left {
+  &-left {
     @include centerFlex;
     gap: 37px;
     &__brand {
@@ -21,7 +21,7 @@
       }
 
       &-text {
-        @include fontSource(27px, 32px, 300, 0.025em);
+        @include fontSource(27px, 32px, 400, 0.025em);
         text-transform: uppercase;
         color: #222222;
 
@@ -36,28 +36,72 @@
       height: 38px;
       display: flex;
       .browse {
+        transition: 0.5s;
         width: 87px;
-        background-color: $colorFonFour;
         background-image: linear-gradient(
           180deg,
           #f9f9f9 0%,
           #f5f5f5 100%
         );
         @include centerFlex;
-        gap: 8px;
-        @include fontSource(14px, 32px, 300, 0.025em);
+        @include fontSource(14px, 32px, 400);
         color: $colorContentOne;
         border: 1px solid $colorFonThree;
         border-radius: 3px 0px 0px 3px;
+        summary {
+          display: flex;
+          align-items: center;
+          padding-inline: 8px;
+          justify-content: space-between;
+          box-sizing: border-box;
+          height: 100%;
+          width: 100%;
+        }
+        & > summary::after {
+          content: '';
+          width: 9px;
+          height: 6px;
+          background-image: url('../images/forms/caretdownGray.png');
+          background-size: cover;
+        }
+        &[open] > summary::after {
+          content: '';
+          width: 9px;
+          height: 6px;
+          background-image: url('../images/forms/caretdownWhite.png');
+          background-size: cover;
+          transform: rotate(180deg);
+        }
+        &[open] summary {
+          background-color: $colorFonFour;
+        }
+        a {
+          @include fontSource(14px, 32px, 400);
+          color: $colorContentOne;
+          text-decoration: none;
+          background-color: $colorFonOne;
+          z-index: 11;
+          padding-left: 6px;
+          &:hover {
+            color: $colorContentFive;
+            background-color: $colorContentTwo;
+          }
+        }
       }
       #search-header {
         width: 280px;
         padding-left: 16px;
-        @include fontSource(14px, 32px, 300, 0.025em);
         color: $colorContentSix;
         border: 1px solid $colorFonThree;
         &::placeholder {
+          @include fontSource(14px, 32px, 300, 0.025em);
           filter: blur(0.4px);
+        }
+        &:focus {
+          outline: none;
+          box-shadow: 0px 0px 3px $colorContentTwo;
+          border: 1px solid $colorContentTwo;
+          border-radius: 0;
         }
       }
       .magnifying {
@@ -65,11 +109,14 @@
         @include centerFlex;
         border: 1px solid $colorFonThree;
         border-radius: 0px 3px 3px 0px;
+        &:hover {
+          cursor: pointer;
+        }
       }
     }
   }
 
-  &__right {
+  &-right {
     @include centerFlex;
     gap: 26px;
     .basket-img {
@@ -81,9 +128,57 @@
       height: 38px;
       background-color: $colorContentTwo;
       @include centerFlex;
-      gap: 8px;
       @include fontSource(15px, 32px, 400, 0.025em);
       color: $colorContentThree;
+      summary {
+        display: flex;
+        align-items: center;
+        padding-inline: 8px;
+        justify-content: space-between;
+        box-sizing: border-box;
+        height: 100%;
+        width: 100%;
+      }
+      & > summary::after {
+        content: '';
+        width: 9px;
+        height: 6px;
+        background-image: url('../images/forms/caretdownWhite.png');
+      }
+      &[open] > summary::after {
+        content: '';
+        width: 9px;
+        height: 6px;
+        background-image: url('../images/forms/caretdownWhite.png');
+        filter: brightness(0) saturate(100%) invert(58%) sepia(45%)
+          saturate(813%) hue-rotate(305deg) brightness(95%)
+          contrast(99%);
+        transform: rotate(180deg);
+      }
+      &:hover {
+        background-color: $colorFonOne;
+        color: $colorContentTwo;
+        box-shadow: 0px 0px 3px $colorContentTwo;
+        cursor: pointer;
+        summary::after {
+          filter: brightness(0) saturate(100%) invert(58%) sepia(45%)
+            saturate(813%) hue-rotate(305deg) brightness(95%)
+            contrast(99%);
+        }
+      }
+      a {
+        @include fontSource(14px, 32px, 400);
+        color: $colorContentOne;
+        text-decoration: none;
+        background-color: $colorFonOne;
+        z-index: 11;
+        padding-left: 6px;
+        border-top: 1px solid $colorFonThree;
+        &:hover {
+          color: $colorContentFive;
+          background-color: $colorContentTwo;
+        }
+      }
     }
   }
 }
