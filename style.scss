@@ -6,6 +6,8 @@
 @import 'SCSS/sectionSubscribe';
 @import 'SCSS/section-info';
 @import 'SCSS/footer';
+@import 'SCSS/section-topTwo';
+@import 'SCSS/pageTwo-center';
 
 * {
   margin: 0;
@@ -94,64 +96,76 @@ body {
     display: flex;
     flex-wrap: wrap;
     gap: 32px;
-    .product {
-      display: flex;
-      flex-direction: column;
-      gap: 17px;
+    .product-card {
+      position: relative;
       width: 261px;
-      &-name {
-        @include fontSource(13px, 1.2, 600);
-        text-transform: uppercase;
-        color: $colorContentOne;
-        padding-left: 14px;
-      }
-      &-price {
-        @include fontSource(15px, 1.2, 800, 0.025em);
-        text-transform: uppercase;
-        color: $colorContentTwo;
-        padding-left: 14px;
-        padding-bottom: 21px;
-      }
-      &__image {
-        position: relative;
-        .fon-add {
-          position: absolute;
+      height: 364px;
+      background-color: #ffffff;
+      display: flex;
+      gap: 17px;
+      flex-direction: column;
+      .card-link {
+        height: 100%;
+        width: 261px;
+        display: block;
+        text-decoration: none;
+        .box-foto {
+          width: 261px;
+          height: 280px;
+          background-color: #efefef;
           @include centerFlex;
-
-          width: 100%;
-          height: 100%;
-          opacity: 0;
-          &:hover {
-            background-color: rgb(58, 56, 56);
-            opacity: 0.83;
+        }
+        .card-text {
+          padding: 14px 17px;
+          display: flex;
+          flex-direction: column;
+          gap: 17px;
+          .variant-name {
+            @include fontSource(14px, 1.2, 600, 0.025em);
+            text-transform: uppercase;
+            color: #6f6e6e;
           }
-          .basket-add {
-            width: 123px;
-            height: 39px;
-            background-color: $colorFonTwo;
-            border: 1px solid $colorContentThree;
-            @include centerFlex;
-            gap: 10px;
-            img {
-              width: 23px;
-              height: 22px;
-            }
-            p {
-              @include fontSource(13px, 1.2, 700, 0.025em);
-              color: $colorContentThree;
-            }
-            &:hover {
-              cursor: pointer;
-            }
+          .variant-price {
+            @include fontSource(16px, 1.2, 700, 0.025em);
+            text-transform: uppercase;
+            color: $colorContentTwo;
           }
         }
-        img {
-          height: 100%;
-          width: 100%;
+      }
+      .add-box {
+        position: absolute;
+        top: 98px;
+        display: none;
+        justify-content: center;
+        width: 100%;
+        pointer-events: none;
+        .add {
+          display: flex;
+          text-decoration: none;
+          border: 1px solid #fff;
+          padding: 10px;
+          align-items: center;
+          pointer-events: all;
+          .add-txt {
+            font-family: Lato;
+            font-size: 13px;
+            line-height: 1.2;
+            font-weight: 700;
+            color: #ffffff;
+          }
+          .add:hover {
+            box-shadow: 0 0 10px 0 #fff;
+          }
         }
       }
       &:hover {
         box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.15);
+      }
+      &:hover .box-foto {
+        filter: brightness(30%);
+      }
+      &:hover .add-box {
+        display: flex;
       }
     }
   }

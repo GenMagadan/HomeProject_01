@@ -22,26 +22,26 @@
       }
     }
   }
-  .brand-title {
+}
+.brand-title {
+  display: flex;
+  margin-left: 230px;
+  margin-top: 276px;
+  padding-left: 12px;
+  border-left: 12px solid $colorContentTwo;
+  &__text {
+    font-size: 0;
     display: flex;
-    margin-left: 230px;
-    margin-top: 276px;
-    padding-left: 12px;
-    border-left: 12px solid $colorContentTwo;
-    &__text {
-      font-size: 0;
-      display: flex;
-      flex-direction: column;
-      gap: 24px;
-      h1 {
-        @include fontSource(60px, 0.7, 900, 0.025em);
-        color: $colorContentOne;
-      }
-      h3 {
-        @include fontSource(40px, 0.7, 900, 0.025em);
-        span {
-          color: $colorContentTwo;
-        }
+    flex-direction: column;
+    gap: 24px;
+    h1 {
+      @include fontSource(60px, 0.7, 900, 0.025em);
+      color: $colorContentOne;
+    }
+    h3 {
+      @include fontSource(40px, 0.7, 900, 0.025em);
+      span {
+        color: $colorContentTwo;
       }
     }
   }
