@@ -548,6 +548,7 @@ footer .social-icon .square img {
   filter: brightness(0) saturate(100%) invert(80%) sepia(0%) saturate(2830%) hue-rotate(52deg) brightness(104%) contrast(59%);
 }
 footer .social-icon .square:hover {
+  cursor: pointer;
   background-color: #f16d7f;
 }
 footer .social-icon .square:hover img {
