@@ -1,24 +1,4 @@
 .section-topTwo {
-  .menu {
-    height: 51px;
-    display: flex;
-    padding-inline: 460px;
-    justify-content: space-between;
-    align-items: center;
-    background-color: $colorFonOne;
-
-    a {
-      text-decoration: none;
-      @include fontSource(14px, 26px, 700, 0.025em);
-      text-transform: uppercase;
-      color: $colorContentOne;
-      &:hover {
-        color: $colorContentTwo;
-        padding-block: 13px;
-        border-bottom: 3px solid $colorContentEight;
-      }
-    }
-  }
   .view-product {
     display: flex;
     align-items: center;
