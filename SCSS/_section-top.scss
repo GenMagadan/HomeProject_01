@@ -2,10 +2,12 @@
   height: 665px;
   background-image: url(./images/foto/fonOne.png);
   background-size: cover;
-  padding-top: 276px;
   box-sizing: border-box;
   padding-inline: 230px;
+  position: relative;
   .brand-title {
+    position: absolute;
+    top: 276px;
     padding-left: 12px;
     border-left: 12px solid $colorContentTwo;
     font-size: 0;

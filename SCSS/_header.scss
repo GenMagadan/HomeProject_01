@@ -1,4 +1,8 @@
 .header {
+  width: 1600px;
+  z-index: 20;
+  position: sticky;
+  top: 0;
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.17);
   background-color: $colorFonOne;
   .header-top {

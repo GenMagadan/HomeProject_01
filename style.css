@@ -1,4 +1,8 @@
 .header {
+  width: 1600px;
+  z-index: 20;
+  position: sticky;
+  top: 0;
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.17);
   background-color: #ffffff;
 }
@@ -245,11 +249,13 @@
   height: 665px;
   background-image: url(./images/foto/fonOne.png);
   background-size: cover;
-  padding-top: 276px;
   box-sizing: border-box;
   padding-inline: 230px;
+  position: relative;
 }
 .section-top .brand-title {
+  position: absolute;
+  top: 276px;
   padding-left: 12px;
   border-left: 12px solid #f16d7f;
   font-size: 0;
