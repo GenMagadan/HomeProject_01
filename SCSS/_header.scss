@@ -1,12 +1,11 @@
 .header {
-  width: 1600px;
   z-index: 20;
   position: sticky;
   top: 0;
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.17);
   background-color: $colorFonOne;
   .header-top {
-    padding-inline: 230px;
+    padding-inline: 300px;
     border: 1px solid $colorFonThree;
     height: 100px;
     display: flex;
@@ -18,12 +17,11 @@
         display: flex;
         align-items: center;
         gap: 13px;
-
+        text-decoration: none;
         img {
           width: 59px;
           height: 51px;
         }
-
         &-text {
           @include fontSource(27px, 32px, 400, 0.025em);
           text-transform: uppercase;
@@ -141,6 +139,7 @@
         @include centerFlex;
         @include fontSource(15px, 32px, 400, 0.025em);
         color: $colorContentThree;
+        border: 1px solid $colorContentEight;
         summary {
           display: flex;
           align-items: center;
@@ -169,7 +168,7 @@
         &:hover {
           background-color: $colorFonOne;
           color: $colorContentTwo;
-          box-shadow: 0px 0px 3px $colorContentTwo;
+          border: 1px solid $colorContentEight;
           cursor: pointer;
           summary::after {
             filter: brightness(0) saturate(100%) invert(58%)

@@ -2,7 +2,7 @@
   background-color: $colorFonOne;
 }
 .products-details {
-  padding: 67px 230px 44px;
+  padding: 67px 300px 44px;
   display: flex;
   box-sizing: border-box;
   flex-direction: column;
@@ -92,7 +92,7 @@
   width: 16px;
 }
 .options-shopping {
-  padding-inline: 230px;
+  padding-inline: 300px;
   box-sizing: border-box;
   display: flex;
   align-items: center;
@@ -115,7 +115,7 @@
   }
 }
 .making-purchases {
-  padding: 63px 230px 79px;
+  padding: 63px 300px 79px;
   display: flex;
   gap: 35px;
   .delivery-address {
@@ -201,8 +201,8 @@
       text-transform: uppercase;
       color: $colorContentThree;
       text-decoration: none;
+      border: 1px solid $colorContentEight;
       &:hover {
-        box-shadow: 0px 0px 5px 0px $colorContentTwo;
         cursor: pointer;
         background-color: $colorFonOne;
         color: $colorContentTwo;

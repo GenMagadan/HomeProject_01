@@ -17,10 +17,10 @@
     <header class="header">
       <section class="header-top">
         <div class="header-left">
-          <div class="header-left__brand">
+          <a href="#" class="header-left__brand">
             <img src="./images/logo/tripleB.png" alt="logo" />
             <p class="header-left__brand-text">BRAN<span>D</span></p>
-          </div>
+          </a>
           <div class="header-left__search">
             <details class="browse">
               <summary>Browse</summary>
@@ -70,13 +70,15 @@
     <section class="section-topTwo">
       <div class="view-product">
         <h1 class="chapter-name">NEW ARRIVALS</h1>
-        <div class="navigation-path">
-          <a href="#"><span class="link-of-nav">Home</span></a>
+        <nav class="navigation-path">
+          <a href="./index.html"
+            ><span class="link-of-nav">Home</span></a
+          >
           <a href="#">/ <span class="link-of-nav">Men</span></a>
           <a href="#"
             >/ <span class="link-of-nav last">New Arrivals</span></a
           >
-        </div>
+        </nav>
       </div>
     </section>
     <section class="pageThree-center">
@@ -531,17 +533,19 @@
               class="email"
               placeholder="Enter Your Email"
             />
-            <button class="subscribe-button">Subscribe</button>
+            <button type="submit" class="subscribe-button">
+              Subscribe
+            </button>
           </div>
         </div>
       </div>
     </section>
     <section class="section-info">
-      <section class="announced">
-        <div class="announced__brand">
+      <article class="announced">
+        <a href="#" class="announced__brand">
           <img src="./images/logo/tripleB.png" alt="logo" />
           <p class="announced__brand-text">BRAN<span>D</span></p>
-        </div>
+        </a>
         <p class="announced__text">
           Objectively transition extensive data rather than cross
           functional solutions. Monotonectally syndicate
@@ -554,8 +558,8 @@
           infomediaries. Distinctively seize superior initiatives for
           wireless technologies. Dynamically optimize.
         </p>
-      </section>
-      <section class="info-links company">
+      </article>
+      <nav class="info-links company">
         <h3>COMPANY</h3>
         <ul>
           <li><a href="#">Home</a></li>
@@ -564,8 +568,8 @@
           <li><a href="#">How It Works</a></li>
           <li><a href="#">Contact</a></li>
         </ul>
-      </section>
-      <div class="info-links information">
+      </nav>
+      <nav class="info-links information">
         <h3>INFORMATION</h3>
         <ul>
           <li><a href="#">Tearms & Condition</a></li>
@@ -574,8 +578,8 @@
           <li><a href="#">How to Sell</a></li>
           <li><a href="#">Promotion</a></li>
         </ul>
-      </div>
-      <div class="info-links shop-category">
+      </nav>
+      <nav class="info-links shop-category">
         <h3>SHOP CATEGORY</h3>
         <ul>
           <li><a href="#">Men</a></li>
@@ -584,7 +588,7 @@
           <li><a href="#">Apparel</a></li>
           <li><a href="#">Brows All</a></li>
         </ul>
-      </div>
+      </nav>
     </section>
     <footer>
       <p>© 2022 Brand All Rights Reserved.</p>

@@ -18,13 +18,12 @@
 }
 
 body {
-  width: 1600px;
   margin: auto;
   background-color: gray;
 }
 
 .pageOne-center {
-  padding-inline: 230px;
+  padding-inline: 300px;
   padding-block: 98px;
   background-color: $colorFonOne;
   .sections-interest {
@@ -98,7 +97,7 @@ body {
   .product-selection {
     display: flex;
     flex-wrap: wrap;
-    gap: 32px;
+    gap: 28px;
     .product-card {
       position: relative;
       width: 261px;
@@ -156,7 +155,7 @@ body {
             font-weight: 700;
             color: #ffffff;
           }
-          .add:hover {
+          &:hover {
             box-shadow: 0 0 10px 0 #fff;
           }
         }
@@ -179,6 +178,8 @@ body {
     width: 212px;
     height: 48px;
     background-color: $colorContentTwo;
+    text-decoration: none;
+    border: 1px solid $colorContentEight;
     p {
       @include fontSource(16px, 48px, 700, 0.025em);
     }
@@ -191,7 +192,7 @@ body {
     &:hover {
       background-color: $colorFonOne;
       color: $colorContentTwo;
-      box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.15);
+      border: 1px solid $colorContentEight;
       cursor: pointer;
       img {
         filter: brightness(0) saturate(100%) invert(67%) sepia(31%)
